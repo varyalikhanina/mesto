@@ -1,5 +1,6 @@
 {
   "name": "mesto",
+  "homepage": "https://varyalikhanina.github.io/mesto/",
   "version": "1.0.0",
   "description": "My homework for Yandex.Praktikum, sprint 11",
   "main": "index.js",
@@ -18,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/varyalikhanina/mesto/issues"
   },
-  "homepage": "https://github.com/varyalikhanina/mesto#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
