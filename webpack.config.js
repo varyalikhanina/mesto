@@ -24,7 +24,9 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use:  [isDev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        use:  [
+          isDev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'
+        ]
       },
       {
         test: /\.(png|jpg|gif|ico|svg)$/i,
@@ -43,10 +45,10 @@ module.exports = {
           }
         ]
       },
-    {
+      {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=./vendor/fonts/[name].[ext]'
-    }
+      }
     ]
   },
   plugins: [
@@ -54,12 +56,12 @@ module.exports = {
       filename: 'style.[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.css$/g,
-        cssProcessor: require('cssnano'),
-        cssProcessorPluginOptions: {
-           preset: ['default'],
+      assetNameRegExp: /\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+          preset: ['default'],
         },
-        canPrint: true
+      canPrint: true
     }),
     new HtmlWebpackPlugin({
       inject: false,
