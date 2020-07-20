@@ -9,10 +9,10 @@ import UserCard from "./modules/userCard";
 import UserInfo from "./modules/userInfo";
 
 //карточки с сервера
-const apiCards = new Api('https://praktikum.tk/cohort10/cards', '319cdcca-2720-462d-92f1-a963880ecfc3');
+const apiCards = new Api('https://praktikum.tk/cohort10/cards', '');
 
 //данные о пользователе с сервера
-const apiUser = new Api('https://praktikum.tk/cohort10/users/me', '319cdcca-2720-462d-92f1-a963880ecfc3');
+const apiUser = new Api('https://praktikum.tk/cohort10/users/me', '');
 
 //место, куда записываем карточки
 const placesList = document.querySelector('.places-list');
